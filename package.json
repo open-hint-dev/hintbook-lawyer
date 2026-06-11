@@ -1,0 +1,39 @@
+{
+    "name": "@openhint/hintbook-lawyer",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "A HINT hintbook for legal drafting — declare parties, clauses, obligations, and red lines in markdown, and compile them into binding drafting prompts for AI assistants.",
+    "keywords": [
+        "openhint",
+        "hintbook",
+        "legal"
+    ],
+    "author": "Andrei Neprel <andrei@neprel.ai> (https://neprel.ai/)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/open-hint-dev/hintbook-lawyer.git",
+        "directory": "."
+    },
+    "homepage": "https://github.com/open-hint-dev/hintbook-lawyer#readme",
+    "bugs": {
+        "url": "https://github.com/open-hint-dev/hintbook-lawyer/issues"
+    },
+    "engines": {
+        "node": ">=24"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "./index.js",
+    "exports": {
+        "./package.json": "./package.json",
+        ".": {
+            "import": "./index.js"
+        }
+    },
+    "files": [
+        "*"
+    ],
+    "dependencies": {}
+}
