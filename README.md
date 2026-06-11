@@ -28,12 +28,13 @@ Write any of these as a markdown heading — `# keyword Name {#optional_id}` —
 | Area                    | Keywords                                                                                                                                                                              |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Matter context          | `matter`, `jurisdiction`, `party`, `definition`, `recital`, `fact`, `read`, `precedent`, `style`                                                                                      |
-| Document structure      | `clause`, `obligation`, `right`, `condition`, `representation`, `remedy`, `indemnity`, `liability`, `termination`, `payment`, `deadline`, `notice`, `dispute`, `exhibit`, `signature` |
+| Document structure      | `clause`, `obligation`, `prohibition`, `right`, `condition`, `exception`, `breach`, `source`, `representation`, `remedy`, `indemnity`, `liability`, `termination`, `payment`, `deadline`, `notice`, `dispute`, `exhibit`, `signature` |
 | Litigation & argument   | `claim`, `argument`, `authority`                                                                                                                                                      |
-| Positions & constraints | `rule` (red lines), `prohibition`, `standard`, `risk`, `checklist`                                                                                                                    |
+| Positions & constraints | `redline`, `never` (banned content), `fallback`, `standard`, `risk`, `checklist`                                                                                                      |
+| Drafting discipline     | `example`, `good`, `bad`, `action`, `res`                                                                                                                                             |
 | Spec-internal           | `notes` (excluded from compiled output)                                                                                                                                               |
 
-Natural long forms work as synonyms: `provision`/`section`/`article` → `clause`, `warranty` → `representation`, `whereas` → `recital`, `schedule`/`annex`/`appendix` → `exhibit`, `redline` → `rule`, and more.
+Natural long forms work as synonyms: `provision`/`section`/`article` → `clause`, `warranty` → `representation`, `whereas` → `recital`, `schedule`/`annex`/`appendix` → `exhibit`, `carveout`/`proviso`/`unless`/`notwithstanding` → `exception`, `violation`/`default` → `breach`, `rule` → `redline`, and more.
 
 Full reference → [docs/keywords.md](docs/keywords.md).
 
@@ -58,6 +59,18 @@ Details → [docs/modes.md](docs/modes.md).
 
 The Receiving Party shall not disclose Confidential Information to any third party.
 
+### exception Advisors
+
+Disclosure to professional advisors bound by equivalent confidentiality duties.
+
+### breach
+
+Any disclosure outside the declared exceptions.
+
+#### remedy
+
+Injunctive relief without proof of damages.
+
 ## deadline Term
 
 Five (5) years from the Effective Date; calendar days.
@@ -72,6 +85,28 @@ compiles (inside the matter/document context chain, header, and footer) into:
 
 The Receiving Party shall not disclose Confidential Information to any third party.
 
+<exception name="Advisors" id="">
+
+A narrow exception to the enclosing block. It applies exactly as stated and no further — never broaden it, and never let it swallow the rule it qualifies:
+
+Disclosure to professional advisors bound by equivalent confidentiality duties.
+
+</exception>
+
+<breach name="" id="">
+
+What constitutes a breach of the enclosing provision. Draft so that exactly this conduct — no more, no less — triggers the consequences declared inside:
+
+Any disclosure outside the declared exceptions.
+
+<remedy name="" id="">
+
+Injunctive relief without proof of damages.
+
+</remedy>
+
+</breach>
+
 </binding_obligation>
 
 <time_provision name="Term" id="">
@@ -82,6 +117,8 @@ Five (5) years from the Effective Date; calendar days.
 
 </clause>
 ```
+
+The whole anatomy of a norm — trigger (`condition`), carve-out (`exception`), what breaks it (`breach`), what follows (`remedy`), the law it answers to (`source`), the negotiation order (`fallback`) — is expressed by nesting headings a lawyer already writes. No new syntax, ever.
 
 The `__system__` glossary defines every tag as a binding drafting directive — including the anti-hallucination rules that matter most in legal work: defined terms used with total discipline, and citations never invented.
 

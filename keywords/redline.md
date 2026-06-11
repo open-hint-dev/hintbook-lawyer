@@ -1,8 +1,10 @@
 ---
 synonyms:
-    - rules
-    - redline
     - redlines
+    - red-line
+    - red-lines
+    - rule
+    - rules
 ---
 
 <non_negotiable_position name="{name}" id="{id}">
