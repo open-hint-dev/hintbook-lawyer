@@ -1,4 +1,13 @@
 ---
+description: |
+    Drafting patterns that must never be used — absolute, even where a precedent
+    or boilerplate uses them. Use for the "never draft it this way" rules
+    (distinct from `never`, which bans document content/positions).
+    Example:
+        # bad Avoid
+        - Never use "and/or".
+        - Never leave an obligation without a named obligor.
+        - Never define a term you do not use.
 synonyms:
     - avoid
 ---

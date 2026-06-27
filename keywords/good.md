@@ -1,4 +1,12 @@
 ---
+description: |
+    Mandatory drafting patterns, applied consistently in every provision — no
+    substitution, even for an equivalent. Use for the positive "always draft it
+    this way" rules.
+    Example:
+        # good Patterns
+        Always use defined terms instead of repeating party names. Always state
+        the obligor explicitly in each obligation.
 synonyms:
     - prefer
     - preferred

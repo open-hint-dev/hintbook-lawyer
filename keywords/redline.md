@@ -1,4 +1,14 @@
 ---
+description: |
+    Client red lines: positions every provision must honor without exception,
+    never traded away. Use `redline` for client negotiating limits — distinct
+    from `prohibition` (a party's duty not to act) and `never` (content banned
+    from the document). Nest `fallback` blocks under a position to set the
+    concession order.
+    Example:
+        # redline Liability floor
+        We never accept uncapped liability except for our own fraud. Any cap
+        below 12 months' fees is unacceptable.
 synonyms:
     - redlines
     - red-line

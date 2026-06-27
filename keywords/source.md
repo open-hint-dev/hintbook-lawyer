@@ -1,4 +1,12 @@
 ---
+description: |
+    The law or rule the enclosing provision exists to satisfy (use `source` for
+    anything COMPLIED WITH; use `authority` for anything CITED). Nest it under the
+    provision. A conflict between the declared text and the source is flagged in
+    the report, never silently resolved.
+    Example:
+        ### source
+        Enforceability limits on restraints of trade under the governing law.
 synonyms:
     - sources
     - basis
