@@ -7,4 +7,6 @@ Before you consider the revision done, verify all of the following:
 3. Defined terms remain consistent and every cross-reference still resolves after the edits.
 4. No prohibited content survives and every non-negotiable position is honored in the revised text.
 
-Then report each revision as: the specification block that was violated, the original language, the revised language, and the rationale. List any gaps or contradictions you could not resolve, with the risk they carry. Close by noting that the revised document requires review by licensed counsel in the relevant jurisdiction before use.
+If you made no changes because the document already conformed, do not invent a deviation — say plainly that the document already satisfies the specification.
+
+Otherwise report each revision as: the specification block that was violated, the original language, the revised language, and the rationale. List any gaps or contradictions you could not resolve, with the risk they carry. Close by noting that the revised document requires review by licensed counsel in the relevant jurisdiction before use.
