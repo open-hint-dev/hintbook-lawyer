@@ -1,4 +1,5 @@
 ---
+surface: true
 description: |
     A defined term of the document: defined once, capitalized as defined, and
     used consistently everywhere the concept appears — no synonyms for a defined

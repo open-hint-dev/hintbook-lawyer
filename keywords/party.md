@@ -1,4 +1,5 @@
 ---
+surface: true
 description: |
     A party to the document: exact legal name, role, and capacity. The declared
     name and defined designation are used consistently and never varied,

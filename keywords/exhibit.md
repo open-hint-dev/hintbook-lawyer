@@ -1,4 +1,5 @@
 ---
+surface: true
 description: |
     An attachment to the document — referenced correctly in the body under its
     declared designation, with the declared content included. Give it an id and
