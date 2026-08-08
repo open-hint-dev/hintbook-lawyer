@@ -2,7 +2,7 @@
     "name": "@openhint/hintbook-lawyer",
     "version": "1.0.4",
     "type": "module",
-    "description": "A HINT hintbook for legal drafting — declare parties, clauses, obligations, and red lines in markdown, and compile them into binding drafting prompts for AI assistants.",
+    "description": "A HINT hintbook for legal drafting — declare parties, clauses, obligations, and red lines in markdown as the knowledge that governs a matter.",
     "keywords": [
         "openhint",
         "hintbook",

@@ -38,17 +38,21 @@ Natural long forms work as synonyms: `provision`/`section`/`article` → `clause
 
 Full reference → [docs/keywords.md](docs/keywords.md).
 
-## Modes
+## Output
 
-| Mode                | Invocation                   | The assistant's role                                                                                                                                                 |
-| ------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `compile` (default) | `hint <paths>`               | Senior attorney **drafting** the document exactly as specified — defined-term discipline, no invented facts, figures, or citations, gaps reported instead of filled. |
-| `fix`               | `hint --mode fix <paths>`    | Senior attorney **revising** an existing document that deviates from the spec: smallest conforming edits, conforming provisions preserved, every revision justified. |
-| `review`            | `hint --mode review <paths>` | Senior attorney **auditing** a document against the spec: quoted findings with severity, minimal correcting language, an explicit verdict — no edits.                |
+| Invocation                  | What you get                                                                                                                                                     |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `hint <paths>`              | The knowledge that applies to that matter or document, rendered through this book's tags. No persona, no footer — what an assistant already mid-session needs.    |
+| `hint --prompt <paths>`     | The same knowledge wrapped in the drafting role and closing checklist: defined-term discipline, no invented facts, figures, or citations, gaps reported not filled. |
+| `hint --standalone <paths>` | Implies `--prompt`, and prepends the tag glossary for an assistant that never loaded `AGENTS.md`.                                                                 |
 
-Every mode footer reminds the assistant that the output requires review by licensed counsel — the book makes drafting strict, not lawyers optional.
+When a `hint.lock` exists and clauses have drifted, `--prompt` output additionally carries the drift list and scopes the revision to it — automatically, with no mode to select.
 
-Details → [docs/modes.md](docs/modes.md).
+The `--prompt` footer reminds the assistant that the output requires review by licensed counsel — the book makes drafting strict, not lawyers optional.
+
+Details → [docs/framing.md](docs/framing.md).
+
+> Requires `@openhint/cli` 1.1+. This book no longer ships `--mode fix` / `--mode review`; see the [migration guide](https://github.com/open-hint-dev/hint/blob/main/docs/07-migration.md).
 
 ## Example
 

@@ -125,7 +125,7 @@ Enforceability limits on restraints of trade under the governing law.
 
 Three keywords are marked **surfaces** (`surface: true` in their instruction front matter): `party`, `definition`, and `exhibit`. A surface is a declaration whose *name* must appear verbatim in the drafted document — the defined terms and designations the book enforces mechanically: a party's designation used and never varied, a defined term capitalized and used consistently everywhere, an exhibit referenced under its declared designation.
 
-`hint verify <path>` uses this. It reads the drafted document and checks, deterministically and without spending a token, that every declared surface name is present. A missing name means a defined term was never used or an exhibit was never referenced. This is a *presence* check, not a proof that the drafting is sound — that is what the semantic `hint --mode review` audit is for — and the two are complementary. Run `hint lock --strict` to refuse recording a document as generated until it verifies.
+`hint verify <path>` uses this. It reads the drafted document and checks, deterministically and without spending a token, that every declared surface name is present. A missing name means a defined term was never used or an exhibit was never referenced. This is a *presence* check, not a proof that the drafting is sound. Compose it as `hint verify <path> && hint lock <path>` to refuse recording a document as generated until it verifies.
 
 Provision keywords whose name is a descriptive heading rather than a verbatim term — `clause`, `obligation`, `right`, and the like — are deliberately **not** surfaces, so that a verify failure stays a reliable signal of a genuinely missing term rather than noise from a reworded heading.
 
