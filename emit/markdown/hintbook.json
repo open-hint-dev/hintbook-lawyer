@@ -1,0 +1,6 @@
+{
+    "id": "emit-lawyer-markdown",
+    "target": "markdown",
+    "match": ["*.md", "*.markdown"],
+    "comment": "<!-- {text} -->"
+}

@@ -54,6 +54,29 @@ Details → [docs/framing.md](docs/framing.md).
 
 > Requires `@openhint/cli` 1.1+. This book no longer ships `--mode fix` / `--mode review`; see the [migration guide](https://github.com/open-hint-dev/hint/blob/main/docs/07-migration.md).
 
+## Emit: the document itself
+
+This hintbook also ships an **emit pack** — `emit/markdown/` — so `hint emit` can assemble the document a matter spec describes, deterministically and without a model:
+
+```bash
+hint emit clients/acme/nda/agreement.md      # write it
+hint emit --check                            # CI: the document still matches the matter spec
+```
+
+Because a legal document *is* prose, this target has no holes at all: emission is complete. The templates assemble the structure and reproduce your text — they never rewrite a sentence.
+
+| Keyword | Renders as |
+| --- | --- |
+| `matter` | an `#` heading, then its body and children |
+| `clause` `exhibit` `signature` | a `##` heading, then its body and children |
+| `party` | `**Name** — body` |
+| `recital` | `WHEREAS, body` |
+| `definition` | the body as written — the defined term is already stated in your own sentence |
+| `obligation` `prohibition` `right` `condition` `breach` `remedy` `indemnity` `liability` `termination` `payment` `notice` `deadline` `jurisdiction` `representation` | `**Name.** body` — the run-in label is dropped when the block is unnamed |
+| `exception` | `*Exception — Name:* body` |
+
+**What is deliberately left out is the point.** `redline`, `never`, `bad`, `risk`, `fallback`, `precedent`, `authority`, `standard`, and `style` have no template, so they never reach the document. They are your negotiating position and house drafting rules — exactly the material that must not travel to the counterparty in the file you send them. Blocks with no template become constraints on the drafting instead, which is where they belong.
+
 ## Example
 
 ```markdown
