@@ -16,10 +16,10 @@ matter/
 ## Installation
 
 ```bash
-hint install @openhint/hintbook-lawyer
+hint add @openhint/hintbook-lawyer
 ```
 
-This registers the book in your project's `hint.yml`. Then `hint config | claude -p` adds the book's system glossary to your agent context files so assistants know how to read the compiled tags.
+This registers the book in your project's `hint.yml`. Then `hint apply` adds the book's system glossary to your agent context files so assistants know how to read the compiled tags.
 
 ## Vocabulary at a glance
 
