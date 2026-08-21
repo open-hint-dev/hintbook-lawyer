@@ -1,6 +1,6 @@
 {
     "name": "@openhint/hintbook-lawyer",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "type": "module",
     "description": "A HINT hintbook for legal drafting — declare parties, clauses, obligations, and red lines in markdown as the knowledge that governs a matter.",
     "keywords": [
@@ -34,11 +34,15 @@
     },
     "files": [
         "LICENSE",
+        "CHANGELOG.md",
         "README.md",
         "docs",
         "emit",
         "index.js",
         "keywords"
     ],
-    "dependencies": {}
+    "dependencies": {},
+    "scripts": {
+        "test": "node scripts/check-book.mjs"
+    }
 }

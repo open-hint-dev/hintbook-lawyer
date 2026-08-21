@@ -1,17 +1,17 @@
 ---
 description: |
-    Items that must each hold true in the final document, verified explicitly
-    before finishing. Use for a pre-delivery sign-off list.
+    Items that must all be satisfied before the work is considered done.
     Example:
-        # checklist Before delivery
-        - Every defined term is used consistently and defined once
-        - No clause cross-reference is broken
-        - All figures and dates are present (no placeholders)
+        # checklist Release
+        - Sources checked
+        - Open questions reported
 synonyms:
-    - verification
+    - checks
+    - done-when
+    - acceptance-checklist
 ---
 
-<verification_checklist name="{name}" id="{id}">
+<verification_checklist name="{name}" id="{id}" {attrs} source="{source}">
 
 {body}
 

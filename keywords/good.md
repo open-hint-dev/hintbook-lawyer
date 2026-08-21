@@ -1,23 +1,19 @@
 ---
 description: |
-    Mandatory drafting patterns, applied consistently in every provision — no
-    substitution, even for an equivalent. Use for the positive "always draft it
-    this way" rules.
+    A required pattern that must be applied consistently.
     Example:
-        # good Patterns
-        Always use defined terms instead of repeating party names. Always state
-        the obligor explicitly in each obligation.
+        # good Explicit gaps
+        Write “source required” when evidence is absent.
 synonyms:
-    - prefer
+    - required-pattern
     - preferred
+    - do
 ---
 
-<enforced_drafting_patterns name="{name}" id="{id}">
-
-The following drafting patterns are mandatory. Apply every one consistently in every provision you draft:
+<enforced_patterns name="{name}" id="{id}" {attrs} source="{source}">
 
 {body}
 
 {children}
 
-</enforced_drafting_patterns>
+</enforced_patterns>

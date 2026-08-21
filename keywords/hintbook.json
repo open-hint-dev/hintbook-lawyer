@@ -1,4 +1,27 @@
 {
-    "id": "hintbook-lawyer",
-    "description": "A collection of hints for legal professionals"
+  "id": "hintbook-lawyer",
+  "description": "A collection of hints for legal professionals",
+  "synonyms": [
+    [
+      "source",
+      "evidence",
+      "citation",
+      "provenance"
+    ],
+    [
+      "term",
+      "definition",
+      "glossary"
+    ],
+    [
+      "risk",
+      "hazard",
+      "threat"
+    ],
+    [
+      "decision",
+      "choice",
+      "resolution"
+    ]
+  ]
 }

@@ -7,17 +7,13 @@ This prompt uses an HTML-like tag language for legal drafting. Each tag is a typ
 - **matter_overview** — the matter: the parties' goals, deal background, and scope of engagement. Let it inform every decision, but draft only what the operative blocks declare.
 - **governing_law_and_jurisdiction** — draft under this law and forum: its conventions, mandatory rules, and formalities. Flag any requested provision that would be unenforceable under it rather than draft it.
 - **party** — a party: exact legal name, role, capacity. Use the declared name and designation consistently; never vary, abbreviate, or restyle them.
-- **defined_term** — a defined term. Define it exactly, capitalize as defined, and use it for every occurrence of the concept; never substitute a synonym.
 - **recital** — background for the recitals. Set context and intent only; draft no operative obligations into them.
 - **established_fact** — a fact of the matter. Treat it as true, rely on it as stated, never contradict or embellish it.
-- **read_it** — before drafting anything that relies on this reference, open and read the document(s) and mirror their defined terms, cross-referencing precisely. Don't guess at their contents.
 - **drafting_precedent** — a model document or fragment. Replicate its structure, numbering, and style exactly.
-- **drafting_style** — style, tone, and language requirements. Apply them to all drafted text without exception.
 - **clause** — a provision. Draft it exactly — scope, carve-outs, and cross-references included. Don't merge it away, relocate its substance, or add undeclared qualifiers.
 - **binding_obligation** — a duty a party must perform. Draft it in clear mandatory language ("shall"), unambiguous as to who, what, and when. Never dilute to best-efforts or discretion unless the body says so.
 - **prohibited_conduct** — conduct a party must not engage in. Draft it in clear prohibitory language ("shall not"), unambiguous as to who is bound and what is barred. Never soften unless the body says so.
 - **granted_right** — a right granted to a party. Draft holder, scope, conditions, and duration unambiguously. Don't broaden or narrow it.
-- **strict_prohibition** — positions and content that must never appear in or be permitted by the document. Each is an unconditional prohibition, even if a precedent or boilerplate suggests otherwise.
 - **condition** — a condition precedent or subsequent. Draft its trigger, effect, and consequence of failure exactly as declared.
 - **exception** — a narrow carve-out to its enclosing block. Apply it exactly and no further — it never swallows the rule it qualifies, and never extends beyond the block it is nested in.
 - **breach** — what constitutes a breach of the enclosing provision. Draft so exactly the described conduct triggers the nested consequences (typically a remedy); don't expand or dilute it.
@@ -35,16 +31,34 @@ This prompt uses an HTML-like tag language for legal drafting. Each tag is a typ
 - **claim** — a cause of action. Plead its elements and supporting facts as declared, and only those.
 - **legal_argument** — an argument to develop issue → rule → application → conclusion from the declared body; import no argument nobody declared.
 - **legal_authority** — authorities to cite. Cite precisely and only for the stated point. Never invent, approximate, or extrapolate a citation — one you cannot verify from the provided material is a gap to report.
-- **legal_basis** — the law, regulation, or contractual source the enclosing block must satisfy. Draft that provision to comply as declared; if the declared text and this source conflict, flag it rather than resolve it silently. Never invent or approximate the source.
 - **non_negotiable_position** — the client's red lines. Every provision honors them without exception — never trade away, dilute, or leave to implication.
 - **fallback_position** — an ordered fallback to its enclosing position. Concede to it only when the primary cannot be held, in the declared order. Never retreat past the last fallback, and red lines bind every fallback.
 - **required_drafting_standards** — required boilerplate and standards. Apply every one without substitution, even where an equivalent seems available.
-- **risk_to_mitigate** — a known risk the document must address. State in your report exactly which provision mitigates it and how.
-- **verification_checklist** — items that must each hold true in the final document. Verify every one before finishing; address any that fail.
-- **drafting_example** — a worked example of the expected output. Match its pattern, structure, and detail for similar text — it illustrates form; the operative blocks control substance.
-- **enforced_drafting_patterns** — mandatory patterns. Apply every one consistently in every provision.
-- **prohibited_drafting_patterns** — patterns that must never be used. Each is absolute, even where a precedent or boilerplate uses it.
 - **reusable_procedure** — a step-by-step procedure. When instructed to perform it, execute the steps exactly, in order — never skip, reorder, or improvise.
-- **static_asset** — material to incorporate verbatim: boilerplate, letterhead, riders, or files referenced by path. Use it exactly as provided; never retype, paraphrase, abridge, or "improve" it.
 
 ---
+
+## Shared common core
+
+## Shared common core
+
+## Shared common core
+
+## Shared common core
+
+## Shared common core
+
+- **strict_prohibition** — content or behavior that must never appear; treat it as unconditional.
+- **evidence_source** — the origin of a fact, figure, or citation; report missing support as a gap and never fill it.
+- **defined_term** — use the declared term verbatim and consistently.
+- **stated_assumption** — treat the assumption as true only on its declared basis and surface any conflict.
+- **identified_risk** — preserve the declared likelihood, impact, and mitigation; invent none of them.
+- **settled_decision** — honor the settled choice and rationale; extend it rather than silently relitigating it.
+- **open_question** — keep the point unresolved and report it; never answer it silently.
+- **verification_checklist** — satisfy every listed item before reporting the work done.
+- **style_requirements** — apply the declared tone, format, and voice to all produced text.
+- **few_shot_example** — follow the example’s pattern and level of detail while letting operative declarations control substance.
+- **enforced_patterns** — apply every required pattern consistently.
+- **prohibited_anti_patterns** — never use any declared prohibited pattern.
+- **read_it** — open and read the declared reference before relying on it; never guess its contents.
+- **static_asset** — use the declared asset exactly as provided; never paraphrase or recreate it.

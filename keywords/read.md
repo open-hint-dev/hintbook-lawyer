@@ -1,15 +1,16 @@
 ---
 description: |
-    Documents the assistant must open and read before drafting anything that
-    relies on them — so it mirrors their defined terms and cross-references them
-    precisely instead of guessing. Put the path in the name/body.
+    A runtime reference that must be opened before work relying on it begins.
     Example:
-        # read Master Agreement
-        `docs/msa-2025.pdf` — read before drafting the SOW; reuse its defined
-        terms and clause numbering.
+        # read Policy
+        policies/current.md
+synonyms:
+    - read-file
+    - reference-file
+    - consult
 ---
 
-<read_it name="{name}" id="{id}">
+<read_it name="{name}" id="{id}" {attrs} source="{source}">
 
 {body}
 

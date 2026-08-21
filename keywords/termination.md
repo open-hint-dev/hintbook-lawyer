@@ -7,6 +7,7 @@ description: |
         Either party may terminate on 30 days' written notice of a material
         breach left uncured; on termination all licences end and fees accrued
         remain payable.
+synonyms: [terminations, termination-item]
 ---
 
 <termination_provision name="{name}" id="{id}">

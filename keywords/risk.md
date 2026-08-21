@@ -1,19 +1,19 @@
 ---
 description: |
-    A known risk the document must address. The report must state exactly which
-    provision mitigates it and how — so name the risk, not the solution.
+    A declared risk with likelihood, impact, and mitigation stated by its owner.
     Example:
-        # risk Misclassification
-        Risk that the contractor is deemed an employee. The document must reduce
-        this exposure.
+        # risk Delayed approval
+        Likelihood: medium. Impact: launch delay. Mitigation: weekly review.
 synonyms:
-    - risks
+    - hazard
+    - threat
+    - risk-item
 ---
 
-<risk_to_mitigate name="{name}" id="{id}">
+<identified_risk name="{name}" id="{id}" {attrs} source="{source}">
 
 {body}
 
 {children}
 
-</risk_to_mitigate>
+</identified_risk>

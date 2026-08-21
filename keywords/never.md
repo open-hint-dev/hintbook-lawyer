@@ -1,21 +1,16 @@
 ---
 description: |
-    Content that must never appear in, be permitted by, or be made possible
-    through the document — enforced with the strongest language in the book. Use
-    `never` for banned document content (distinct from `prohibition`, a party's
-    duty, and `redline`, a client negotiating limit).
+    Content or behavior that must never appear; the prohibition is unconditional.
     Example:
-        # never Auto-renewal
-        The document must never contain an automatic renewal or evergreen term,
-        and must never grant the other side a unilateral price-increase right.
+        # never Invented facts
+        Do not invent facts, figures, names, or citations.
 synonyms:
+    - prohibition
     - forbidden
-    - banned
+    - must-not
 ---
 
-<strict_prohibition name="{name}" id="{id}">
-
-CRITICAL ASSURANCE: The following must never appear in, be permitted by, or be made possible through the drafted document under any circumstances. These prohibitions reflect deliberate legal positions — do not soften, qualify, or omit them:
+<strict_prohibition name="{name}" id="{id}" {attrs} source="{source}">
 
 {body}
 

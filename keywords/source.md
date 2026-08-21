@@ -1,25 +1,20 @@
 ---
 description: |
-    The law or rule the enclosing provision exists to satisfy (use `source` for
-    anything COMPLIED WITH; use `authority` for anything CITED). Nest it under the
-    provision. A conflict between the declared text and the source is flagged in
-    the report, never silently resolved.
+    The declared origin of a fact, figure, or citation; missing support is a gap to report.
     Example:
-        ### source
-        Enforceability limits on restraints of trade under the governing law.
+        # source Sales ledger
+        The approved 2026 ledger at records/sales.csv.
 synonyms:
-    - sources
-    - basis
-    - statute
-    - regulation
+    - evidence
+    - reference
+    - citation
+    - provenance
 ---
 
-<legal_basis name="{name}" id="{id}">
-
-The legal source the enclosing block exists to satisfy. Draft the enclosing provision to comply with it as declared; if the declared text and this source conflict, flag the conflict instead of resolving it silently:
+<evidence_source name="{name}" id="{id}" {attrs} source="{source}">
 
 {body}
 
 {children}
 
-</legal_basis>
+</evidence_source>

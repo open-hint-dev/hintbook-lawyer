@@ -1,20 +1,19 @@
 ---
 description: |
-    Style, tone, and language requirements for all drafted text — applied without
-    exception. Use for register, person, plain-language rules, formatting habits.
+    Tone, format, and voice requirements for produced text.
     Example:
-        # style Drafting style
-        Plain modern English. Use "must" not "shall". Active voice. No Latin
-        unless it is a defined term.
+        # style Direct
+        Use short sentences and name every source.
 synonyms:
-    - tone
     - voice
+    - tone
+    - format
 ---
 
-<drafting_style name="{name}" id="{id}">
+<style_requirements name="{name}" id="{id}" {attrs} source="{source}">
 
 {body}
 
 {children}
 
-</drafting_style>
+</style_requirements>
