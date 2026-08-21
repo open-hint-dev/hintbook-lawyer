@@ -4,6 +4,8 @@ A [hintbook](https://github.com/open-hint-dev/hint/blob/main/docs/05-hintbooks.m
 
 HINT is not only for software. The same structure — companion specs, typed blocks, strict borders — serves anyone whose work demands structured thinking. This book applies it to legal documents: you declare parties, defined terms, clauses, obligations, red lines, and prohibitions in plain markdown next to the documents they govern; the compiler turns them into a prompt where every declaration is a binding drafting directive, and the assistant drafts inside the borders instead of improvising around them.
 
+Measured performance and retrieval results live in the core [benchmark report](https://github.com/open-hint-dev/hint/blob/main/docs/09-benchmarks.md).
+
 ```
 matter/
 ├── hint.yml                  ← project root, registers this book
